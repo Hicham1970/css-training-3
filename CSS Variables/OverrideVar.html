@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Override the css variable</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+
+        button {
+            --button-blue: #0000ff;
+            /* new local variable */
+            background-color: var(--white);
+            color: var(--button-blue);
+            border: 1px solid var(--button-blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New Local Variable</h1>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Sometimes we want the variables to change only in a specific section of the page..</p>
+        <p>Assume we want a different color of blue for button elements. Then, we can re-declare the --blue variable
+            inside the
+            button selector. When we use var(--blue) inside this selector, it will use the local --blue variable value
+            declared
+            here.
+            We see that the local --blue variable will override the global --blue variable for the button elements.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
