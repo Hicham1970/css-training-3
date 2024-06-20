@@ -1,0 +1,54 @@
+/*
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.parent div {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/*Pour les  mobiles*/
+@media (max-width: 767px) {
+}
+
+/* Range pour Small Screens*/
+@media (min-width: 768px) {
+  .parent div {
+    width: calc(50% - 10px);
+  }
+}
+
+/*Medium Screens*/
+@media (min-width: 992px) {
+  .parent div {
+    width: calc(25% - 5px);
+  }
+}
+
+/*Large  Screens*/
+@media (min-width: 1200px) {
+}
+
+/*Custom Media Screens*/
+@media (max-width: 1190px) {
+}
+
+/*XXL Media Screens*/
+@media (min-width: 1400px) {
+}

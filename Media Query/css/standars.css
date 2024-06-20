@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.parent > div {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 290px;
+}
+/*Pour les mobiles*/
+@media (max-width: 768px) {
+  .parent > div {
+    width: 570px;
+  }
+}
+
+/* Range pour Small Screens*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .parent > div {
+    width: 750px;
+  }
+}
+
+/*Medium Screens*/
+@media (min-width: 992px) {
+  .parent > div {
+    width: 970px;
+  }
+}
+
+/*Large  Screens*/
+@media (min-width: 1200px) {
+  .parent > div {
+    width: 1200px;
+  }
+}
+
+/*Custom Media Screens*/
+@media (max-width: 1190px) {
+  .parent > div {
+    background-color: black;
+    color: white;
+  }
+}
+
+/*XXL Media Screens*/
+@media (min-width: 1400px) {
+  .parent > div {
+    background-color: black;
+    color: yellow;
+    border: 2px solid red;
+  }
+}

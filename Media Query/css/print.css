@@ -1,0 +1,5 @@
+@media print {
+  .parent > div {
+    background-color: blue;
+  }
+}

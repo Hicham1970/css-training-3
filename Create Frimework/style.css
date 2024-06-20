@@ -1,0 +1,47 @@
+/*Dans ce script css on va essayer de créer des classes css
+avec des propriétés spécifiques */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  position: relative;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 1200px;
+  height: 300px;
+}
+.parent div {
+  background-color: green;
+  color: white;
+}
+
+.product {
+  background-color: red;
+  color: wheat;
+}
+/* classe pour centrer une div*/
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* classe pour arrondir une div*/
+.cercle-100 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.cercle-200 {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
