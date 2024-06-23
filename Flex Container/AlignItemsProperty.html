@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items Property </title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            align-items: center;
+            background-color: DodgerBlue;
+        }
+
+        .flex-start {
+            display: flex;
+            height: 200px;
+            align-items: start;
+            background-color: DodgerBlue;
+        }
+
+        .flex-end {
+            display: flex;
+            height: 200px;
+            align-items: flex-end;
+            background-color: DodgerBlue;
+        }
+
+        .stretch {
+            display: flex;
+            height: 200px;
+            align-items: stretch;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container>div,
+        .flex-start>div,
+        .flex-end>div,
+        .stretch>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-baseLine {
+            display: flex;
+            height: 200px;
+            align-items: baseline;
+            background-color: DodgerBlue;
+        }
+
+        .flex-baseLine>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The align-items Property</h1>
+
+    <p>The "align-items: center;" aligns the flex items in the middle of the container:</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The "align-items: start;" aligns the flex items in beginning of the container:</p>
+
+    <div class="flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The "align-items: end;" aligns the flex items in end of the container:</p>
+
+    <div class="flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The "align-items: stretch;" The stretch value stretches the flex items to fill the container (this is default)::
+    </p>
+
+    <div class="stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The "align-items: baseline;" aligns the flex items such as their baselines aligns:</p>
+
+    <div class="flex-baseLine">
+        <div>
+            <h1>1</h1>
+        </div>
+        <div>
+            <h6>2</h6>
+        </div>
+        <div>
+            <h3>3</h3>
+        </div>
+        <div><small>4</small></div>
+    </div>
+
+
+
+</body>
+
+</html>

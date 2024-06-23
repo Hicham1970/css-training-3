@@ -10,6 +10,7 @@
           "column-span"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

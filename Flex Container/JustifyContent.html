@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content Property</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            background-color: DodgerBlue;
+        }
+
+        .flex-start {
+            display: flex;
+            justify-content: flex-start;
+            background-color: DodgerBlue;
+        }
+
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            background-color: DodgerBlue;
+        }
+
+        .space-around {
+            display: flex;
+            justify-content: space-around;
+            background-color: DodgerBlue;
+        }
+
+        .space-between {
+            display: flex;
+            justify-content: space-between;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container>div,
+        .flex-start>div,
+        .flex-end>div,
+        .space-around>div,
+        .space-between>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The justify-content Property</h1>
+
+    <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The flex-start value aligns the flex items at the beginning of the container (this is default):</p>
+    <div class="flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The flex-end value aligns the flex items at the end of the container :</p>
+    <div class="flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The space-around value displays the flex items with space before, between, and after the lines: :</p>
+    <div class="space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <br><br>
+    <p>The space-between value displays the flex items with space between the lines:</p>
+    <div class="space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+
+</body>
+
+</html>
